@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To  Do </title>
+    <style>
+        #toogle{
+            background-color: green;
+        }
+       .box{
+            /* border: 1px solid; */
+            display:grid;
+            grid-template-columns: repeat(3,250px);
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="Input- to do " id="todo">
+      <button id="add_todo" onclick="add_todo()"> Add To Do </button>
+    </div>
+    <div id="container"></div>
+    <div id="btn"></div>
+    
+        <h1> completed task </h1>
+        <button onclick="completed_task()">Completed Task </button>
+        <div id="task"> </div>
+</body>
+</html>
+<script src="main.js"></script>
