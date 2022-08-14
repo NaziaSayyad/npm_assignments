@@ -98,7 +98,8 @@ let update_todo = async (id) =>{
     res= await res.json();
      console.log("resp",res);
 
-     todo_data.push(res)
+     todo_data.push(res);
+
      console.log(todo_data)
      localStorage.setItem("comp_task",JSON.stringify(todo_data));
      
@@ -152,7 +153,7 @@ let completed_task = ()=>{
         let remove = document.createElement("button");
         remove.innerText = `Remove`;
         remove.onclick = ()=>{
-           remove_todo(index);
+           delete_todo(id);
         }
 
         div1.append(name,toogle,remove);
